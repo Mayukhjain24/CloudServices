@@ -1,0 +1,122 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0a1f2d, #2d3b4d);
+    color: #eaeaea;
+    line-height: 1.6;
+    padding: 0;
+    overflow-x: hidden;
+    cursor: url('https://cdn.pixabay.com/photo/2017/08/30/13/06/mouse-2693104_960_720.png'), auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 2px solid #444;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.service-section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #444;
+}
+
+.service {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #eaeaea;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #bbb;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4d6274;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2a3c48;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a1f2d;
+    border-radius: 10px;
+}
+
+/* Cursor Effect */
+body {
+    cursor: url('https://cdn.pixabay.com/photo/2017/08/30/13/06/mouse-2693104_960_720.png'), auto;
+}
+
+.service:hover {
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
